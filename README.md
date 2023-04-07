@@ -1,6 +1,6 @@
 # docker-debian10-systemd
 
-![build](https://github.com/trfore/docker-debian10-systemd/workflows/build/badge.svg?branch=main&event=push)
+[![build](https://github.com/trfore/docker-debian10-systemd/workflows/build/badge.svg?branch=main&event=push)](https://github.com/trfore/docker-debian10-systemd/actions/workflows/build.yml)
 
 A minimal systemd enabled Debian 10 Docker image for testing Ansible roles with Molecule.
 
