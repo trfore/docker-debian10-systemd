@@ -48,3 +48,8 @@ jobs:
             [1]: https://github.com/peter-evans/create-pull-request
           labels: status/auto-created, base-image
           branch: update-baseos
+
+      - name: Enable pull request auto-merge
+        run: gh pr merge --merge --auto "1"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
