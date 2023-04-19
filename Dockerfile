@@ -1,7 +1,5 @@
-FROM debian:10
-LABEL org.label-schema.author="Taylor Fore (GitHub @trfore)" \
-    org.label-schema.name="docker-debian10-systemd" \ 
-    org.label-schema.vcs-url="https://github.com/trfore/docker-debian10-systemd"
+ARG BASEOS_DIGEST
+FROM docker.io/library/debian:10${BASEOS_DIGEST:-}
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
